@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drums</title>
+</head>
+<body>
+    <div class="sounds">
+        <div data-key="65" class="key">
+            <button class="bu-key" onclick="snd(65)">
+                <div class="button-key">A</div>
+                <span>CLAP</span>
+            </button>
+        </div>
+        <div data-key="83" class="key">
+            <button class="bu-key" onclick="snd(83)">
+                <div class="button-key">S</div>
+                <span>HIHAT</span>
+            </button>
+        </div>
+        <div data-key="68" class="key">
+            <button class="bu-key" onclick="snd(68)">
+                <div class="button-key">D</div>
+                <span>KICK</span>
+            </button>
+        </div>
+        <div data-key="70" class="key">
+            <button class="bu-key" onclick="snd(70)">
+                <div class="button-key">F</div>
+                <span>OPENHAT</span>
+            </button>
+        </div>
+        <div data-key="71" class="key">
+            <button class="bu-key" onclick="snd(71)">
+                <div class="button-key">G</div>
+                <span>BOOM</span>
+            </button>
+        </div>
+        <div data-key="72" class="key">
+            <button class="bu-key" onclick="snd(72)">
+                <div class="button-key">H</div>
+                <span>RIDE</span>
+            </button>
+        </div>
+        <div data-key="74" class="key">
+            <button class="bu-key" onclick="snd(74)">
+                <div class="button-key">J</div>
+                <span>SNARE</span>
+            </button>
+        </div>
+        <div data-key="75" class="key">
+            <button class="bu-key" onclick="snd(75)">
+                <div class="button-key">K</div>
+                <span>TOM</span>
+            </button>
+        </div>
+        <div data-key="76" class="key">
+            <button class="bu-key" onclick="snd(76)">
+                <div class="button-key">L</div>
+                <span>TINK</span>
+            </button>
+        </div>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hi-hat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tick.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

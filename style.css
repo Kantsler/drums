@@ -1,0 +1,74 @@
+@import url(https://fonts.google.com/specimen/Poppins?query=poppins);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 25, 56);
+    background-image: url("https://www.sonor.com/fileadmin/user_upload/Drums/Sonor-Drums-Drumset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sounds {
+    display: grid;
+    grid-template-areas: "k k k k k k k k k";
+    gap: 15px;
+}
+
+.key {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10%;
+    align-content: center;
+    grid-area: "k";
+    background-image: transparent;
+    backdrop-filter: blur(2px);
+    transition: .07s ease-in-out;
+}
+
+.button-key {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+span {
+    font-size: 0.8rem;
+    color: rgb(212, 241, 81);
+    font-weight: 600;
+}
+
+.bu-key {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: rgb(212, 241, 81);
+    box-shadow: rgb(212, 241, 81) 0 0 10px;
+}
+
+@media only screen and (max-width:991px){
+    .sounds {
+        display: grid;
+        grid-template-areas:
+                "k k k"
+                "k k k"
+                "k k k";
+        gap: 15px;
+    }
+}
